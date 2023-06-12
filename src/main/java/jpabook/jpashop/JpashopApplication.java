@@ -6,7 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JpashopApplication {
     public static void main(String[] args) {
-        // git test
+
+        Hello hello = new Hello();
+        hello.setData("hello");
+        String data = hello.getData();
+
         SpringApplication.run(JpashopApplication.class, args);
     }
 }
