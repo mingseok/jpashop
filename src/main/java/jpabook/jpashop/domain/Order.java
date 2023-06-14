@@ -21,7 +21,7 @@ public class Order {
     @JoinColumn(name = "member_id") // 포린키 이름이 "member_id"가 되는 것이다.
     private Member member;
 
-    @OneToMany(mappedBy = "order_id")
+    @OneToMany(mappedBy = "order")
     private List<OrderItem> orderItems = new ArrayList<>();
 
     @OneToOne
