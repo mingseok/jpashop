@@ -9,9 +9,9 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-@RequiredArgsConstructor
 public class MemberRepository {
 
+    @PersistenceContext
     private EntityManager em;
 
     // jpa 저장하는 로직
